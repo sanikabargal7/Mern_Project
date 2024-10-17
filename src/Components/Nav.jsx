@@ -125,11 +125,15 @@ export const Nav = () => {
                 {isMenuOpen && (
                     <div className="md:hidden bg-gray p-4">
                         <nav className="flex flex-col space-y-2">
-                            {['Home', 'About', 'Services', 'Portfolio', 'Contact', 'Blog', 'FAQ', 'Support', 'Terms'].map((page) => (
-                                <Link key={page} to={`/${page.toLowerCase()}`} className="hover:text-gray-400">
-                                    {page}
-                                </Link>
-                            ))}
+                        <Link to="/" className="font-semibold text-gray-600 hover:gray-blue-400 mx-6">Home</Link>
+                        <Link to="/about" className="font-semibold text-gray-600 hover:gray-blue-400 mx-6">About Us</Link>
+                        <Link to="/technologies" className="font-semibold text-gray-600 hover:gray-blue-400 mx-6">Technologies</Link>
+                        <Link to="/services" className="font-semibold text-gray-600 hover:gray-blue-400 mx-6">Services</Link>
+                        <Link to="/phdguide" className="font-semibold text-gray-600 hover:gray-blue-400 mx-6">Phd Guide</Link>
+                        <Link to="/iee" className="font-semibold text-gray-600 hover:gray-blue-400 mx-6">IEEE Project</Link>
+                        <Link to="/carreer" className="font-semibold text-gray-600 hover:gray-blue-400 mx-6">Carrear</Link>
+                        <Link to="/franchise" className="font-semibold text-gray-600 hover:gray-blue-400 mx-6">Franchise</Link>
+                        <Link to="/contact" className="font-semibold text-gray-600 hover:gray-blue-400 mx-6">Contact Us</Link>
                         </nav>
                     </div>
                 )}
