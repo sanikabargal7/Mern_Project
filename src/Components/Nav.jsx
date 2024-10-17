@@ -48,7 +48,7 @@ export const Nav = () => {
                         <Link to="/" className="hover:text-gray-400 text-sm">Franchies</Link>
                         <Link to="/about" className="hover:text-gray-400 text-sm">Carrear</Link>
                         <Link to="/services" className="hover:text-gray-400 text-sm">Technologies</Link>
-                        <Link to="/portfolio" className="hover:text-gray-400 text-sm">Privacy Policy</Link>
+                        <Link to="/carreer" className="hover:text-gray-400 text-sm">Privacy Policy</Link>
                         <Link to="/contact" className="hover:text-gray-400 text-sm">Sitemap</Link>
                     </nav>
                     
@@ -123,7 +123,7 @@ export const Nav = () => {
 
                 {/* Mobile Menu */}
                 {isMenuOpen && (
-                    <div className="md:hidden bg-black p-4">
+                    <div className="md:hidden bg-gray p-4">
                         <nav className="flex flex-col space-y-2">
                             {['Home', 'About', 'Services', 'Portfolio', 'Contact', 'Blog', 'FAQ', 'Support', 'Terms'].map((page) => (
                                 <Link key={page} to={`/${page.toLowerCase()}`} className="hover:text-gray-400">
